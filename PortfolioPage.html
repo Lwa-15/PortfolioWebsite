@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Sets the language of the page to English-->
+<head>
+	<link rel = "stylesheet" type="text/css" href="Portfolio.css"> <!--Links the file to the CS file for styling-->
+	<link href="https://fonts.googleapis.com/css2?family=Cardo&family=Oswald&display=swap" rel="stylesheet"> <!--Links the file to an external font file-->
+	<link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet"> <!--Links the file to an external font file-->
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<title>Luke Aldred Portfolio</title>
+</head>
+<body>
+<div class="NavigationBar">
+	<div class="MenuIcon"> <!--The Menu Icon, which appears when the browser get to mobile view (500px) to reduce the space taken up on the page-->
+		<div></div>
+		<div></div>
+		<div></div>
+		<ul>
+			<li><a href="index.html">Home Page</a></li> <!--Links to appear when the Menu Icon is hovered over-->
+			<li><a href="AboutPage.html">About Page</a></li>
+			<li><a href="PortfolioPage.html">Portfolio Page</a></li>
+			<li><a href="ContactPage.html">Contact Page</a></li>
+		</ul>
+	</div>
+	<div class="SiteTitle"> <!--Navigation Bar-->
+		<h2>Luke Aldred Portfolio</h2>
+	</div>
+	<div class="index">
+		<a href="index.html">Home Page</a>
+	</div>
+	<div class="AboutPage">
+		<a href="AboutPage.html">About</a>
+	</div>
+	<div class="PortfolioPage">
+		<a href="PortfolioPage.html">Portfolio</a>
+	</div>
+	<div class="ContactPage">
+		<a href="ContactPage.html">Contact</a>
+	</div>
+</div>
+<div class="Portfolio"> <!--Container which contains all the Portfolio text and smaller containers-->
+<h1>Personal Projects:</h1>
+<button type="button" class="AccordDropdown" onclick='ChangeImage("WebsiteImageClass")'>Portfolio Website</button> <!--Button for the accordion section, which runs a Javascript sub-routine when clicked to change the images inside the container-->
+<div class="Text"> <!--Container for the text of the portfolio project-->
+	<ul>
+		<li><b>Summary:</b> A website to showcase my portfolio of personal projects and information from my CV</li>
+		<li><b>Programming Language:</b> HTML, CSS and Javascript</li>
+	</ul>
+	<p>Whilst in my first year at university, I had a lecture about employability and how can improve our chances of being noticed when it comes to finding a placement year or 
+	graduate job. One of the ways the lecturer suggested that we improve our employability is by having a portfolio website showing our personal projects and information about 
+	myself.<br>
+	I started planning my website by having some sketches for how I would like my website to look, then I chose a colour scheme by searching through <a href="https://coolors.co/">
+	coolers.co</a> until I found this <a href="https://coolors.co/889977-dd22aa-443344-c9c9bb-f0ffff">colour scheme</a>, all which conform to the Web Content Accessibility Guidelines concerning the
+	colour scheme of a webpage. At the end of the website's creation, I found that my final design does diverge from my initial design, but this is for the greater good and allowed
+	my to add more accessible features to the website using Javascript. In the original design for the website (Fig 2), when the user hovers over the Project boxes, the project’s name, 
+	language, and additional modules are displayed on an overlay to the user. When the user clicks on the project, an overlay is placed on the screen, with a container containing all 
+	the images and information related to the project. The reason why I diverged from this design and decided to go for an accordion design for the projects is because I believed
+	that the original design did not look as professional as an accordion dropdown system, as professionalism is what I am trying to promote about myself.<br><br>
+	During the development of the website, I made sure that my website was conforming to the Web Content Accessibility Guidelines (WCAG) to ensure that my website is accessible and useable
+	by all sorts of users. For example, I added into each page of my website a footer, conforming to the <a href="https://www.w3.org/WAI/tutorials/page-structure/regions/">WCAG Footer Guideline</a> which contains a link to a Sitemap page,
+	conforming to the <a href="https://www.w3.org/TR/WCAG20-TECHS/G63.html">WCAG Alternative Navigation Guidelines.</a> By conforming to these guidelines, I ensure that my website will be accessible to all types of users using
+	a standard web page, as opposed to different websites for different needs from a user.<br><br>
+	Through the inclusion of the Cascading Styling Sheet (CSS) language, I am able to style my HTML code with colour, media queries and layout to make my website more descriptive and
+	appealing to a user. Furthermore, the inclusion of media queries allows for this one website to be able to be viewed on multiple devices, which works towards the goal of being
+	accessible to all users. Also the inclusion of Javascript in this personal project allows for the website to perform actions based on the user's inputs, which would make the website even more
+	dynamic to the user. The code can be found in a respository on my <a href="https://github.com/Lwa-15">GitHub account</a>.<br><br>
+	References:<br><br> <!--Information for all external resources used in this particular project-->
+	Background Image: <a href="https://www.pexels.com/photo/green-leaf-1353938/">Green Leaf</a> (2018) by Min An. Available at 
+	<a href="https://www.pexels.com/photo/green-leaf-1353938/">https://www.pexels.com/photo/green-leaf-1353938/</a>
+	</p>
+	<div class="Images"> <!--Container holding the figures and figure captions for this particular project-->
+		<figure class="WebsiteImageClass"> <!--Container for the figure and figure caption, which changes to the next figure container every 4 seconds-->
+			<img src="Images/Website/WebsiteColourScheme.png" alt="Website Colour Scheme"></img> <!--Image inside the figure-->
+			<figcaption><i>Fig 1: The website colour scheme</i></figcaption> <!--The figure caption to appear below the image-->
+		</figure>
+		<figure class="WebsiteImageClass">
+			<img src="Images/Website/PortfolioDesign.png" alt="Original Drawing for the Portfolio page"></img>
+			<figcaption><i>Fig 2: The original design for the Portfolio page on the website</i></figcaption>
+		</figure>
+	</div>
+</div>
+
+<button type="button" class="AccordDropdown" onclick='ChangeImage("PredictorImageClass")'>COVID-19 Death Predictor</button>
+<div class="Text">
+	<ul>
+		<li><b>Summary:</b> A program which takes the past data for COVID-19 deaths by region provided by the Office of National Statistics and predict the number of deaths for the
+		next week</li>
+		<li><b>Programming Language:</b> Python</li>
+		<li><b>Additional Modules:</b> Pandas, Numpy, Datetime, Matplotlib, Pickle, OS</li>
+	</ul>
+	<p>
+	Near the start of the Coronavirus pandemic, I had an idea to create a system which could use past data in order to predict the total number of deaths for next week in each 
+	area of England and Wales. The historic data I used was provided by the Office of National Statistics (ONS), in which I reorganised into a Comma-Separated Values (.csv) file so 
+	the program could read in the data for analysis and data manipulation.<br><br>
+	The programming language I used in order to create this system was Python, as it provides multiple additional modules to use in order to increase the technical capabilities 
+	of the system. The additional modules used in this system was: Pandas, which allows me to read in and organise data from an external file into a table, Numpy, which allows me 
+	to utilise arrays for greater structuring of data, Datetime, in order for myself to create the date for next week, Malplotlib, so I could display the data in a graph for the 
+	user, Pickle, so the data could be saved for data to be analysed for the next week and OS, which allows me to check if the Pickled file exists in the directory, if not, the 
+	system will access the .csv file for the data. The reason why I chose to save the data in a Pickle file is due to the fact that the program only needs to run the calculations
+	and predictions once for the upcoming week, as to improve the computational speed of displaying the prediction to the user. I decided to program this software in a Procedural Paradigm,
+	as this software does not need to act closer to real-life (as with Object-Oriented Programming Paradigm), instead needing to proceed linearly with subprocedures and functions
+	being called when appropriate.<br><br>
+	Upon reflection, I feel that the predictor was not a success for predicting the upcoming week's number of COVID-19 deaths, as when looking at the figures provided by the ONS 
+	in hindsight, the number of deaths for the next week (22/06/2020) in the East Midlands was 77 deaths, while the program predicted 201 deaths for the East Midlands from the historic 
+	data. However, the method in which I calculated the death rate for the next week was not how I would of written it in a professional environment, as I could of used 
+	the computational power of Jupyter Notebook and used more advanced modules for data analysis such as SciPy and Tensorflow, but my computer at the time has computational limitations, so it would not of been possible to run data analysis
+	modules on my device at the time of creating this predictor. In conclusion, if I were to repeat this project, I would use Jupyter Notebook to be able to train a predictor model to make more
+	accurate predictions compared to the code I created now. The code can be found in a respository on my <a href="https://github.com/Lwa-15">GitHub account</a>.<br><br>
+	References:
+	<a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsregisteredweeklyinenglandandwalesprovisional/weekending18september2020">Data from Office of National Statistics</a>
+	</p>
+	<div class="Images">
+		<figure class="PredictorImageClass">
+			<img src="Images/COVID-19 Predictor/PredictorData.png" alt="PredictorGraph"></img>
+			<figcaption><i>Fig 1: The data taken from the Office of National Statistics website</i></figcaption>
+		</figure>
+		<figure class="PredictorImageClass">
+			<img src="Images/COVID-19 Predictor/PredictorCode.png" alt="PredictorCode"></img>
+			<figcaption><i>Fig 2: Sample of the predictor code</i></figcaption>
+		</figure>
+	</div>
+</div>
+
+<button type="button" class="AccordDropdown" onclick='ChangeImage("DrivingImageClass")'>Autonomous Driving Lane Detection</button>
+<div class="Text">
+<ul>
+	<li><b>Summary:</b> A program which analyses a picture of a road and detects the sides of a road, drawing onto the image its understanding of the shape and direction of 
+	the road</li>
+	<li><b>Programming Language:</b> Python</li>
+	<li><b>Additional Modules:</b> OpenCV, Numpy</li>
+</ul>
+	<p>I decided to focus at least one personal project on the subject of 
+	autonomous driving software. One of the most fundamental components of autonomous driving is the identification of 
+	lanes in a  given video stream. The way in which I achieved this project was to use the programming language Python, 
+	which has the capacity to use several modules in order to create a system. The main module used in the creation of 
+	this system is OpenCV, a Computer Vision module, alongside the mathematical processes in the Numpy module.<br><br>
+	I have had experience with the OpenCV and Numpy modules before through past personal projects, so I knew how to get 
+	the picture set up for analysis, which includes converting the image to a grey image (quicker to proess as grey images only have one channel and RGB 
+	images have 3 channels) as well as applying Edge Detection onto the image in order to find the edges in the 
+	image. However, when researching for the next steps, I found a video called <a href="https://www.youtube.com/watch?v=h98js2usaVo&list=PLQVvvaa0QuDeETZEOy4VdocT7TOjfSA8a&index=4">"ROI - Python plays Grand Theft Auto 5 p.4"</a> in the series "Python Plays: Grand Theft Auto V" by Sentdex on YouTube, in which the programmer 
+	created a Region of Interest inside the image, which allowed for the system to process the image and detect the edges 
+	quicker by specifying an area of the image for processing.<br><br>
+	After the lines were detected and drawn onto the image, I found that each side of the lane was made up of several drawn lines,
+	due to the fact that the road in the image dipped slightly from the angle the image was taken from. I knew that this may
+	lead to issues later on in development, so I decided to find the co-ordinates for a single line on each side of the lane,
+	made up of the several smaller lines. To achieve this, I separated the lines into Left or right, depending on the 
+	gradient of the line (▲x divided by ▲y), from here I found the smallest and largest x and y pairs in each list and drew a new line  
+	on the image to show this composition. <br><br>
+	Finally, I decided to create a steering module which would know in which direction the vehicle should be turning depending on the directions of the two
+	lines. This may not have any further function as of now, but if I were to develop this section of the autonomous driving to incorportate
+	hardware which would react depending on the results of the image processing, this would control when and in which  direction the wheels of the vehicle would turn.
+	Also, I would research on the degree in which the wheels would need to turn, a current idea I have been thinking was to calculate the curve radius of the road and turn the wheels a 
+	certain degrees, depending on how sharp the curve is. I would need to perform research into Civil Engineering in order to find how to calculate this curve radius.
+	Due to the success of this project, I have decided that, in the future, I am going to relate my first attempt at the 100 Days of Code project to automative driving software.<br><br>
+	During this project, I found that the creation of the system to be easy through the documentation provided on the modules I had used, the code can be found in a respository
+	on my <a href="https://github.com/Lwa-15">GitHub account</a>.<br><br>
+	References:<br><br>
+	ROI - Python plays Grand Theft Auto 5 p.4 (2017) YouTube video, added by Sentdex <br> [Online]. Available at <a href="https://www.youtube.com/watch?v=h98js2usaVo&list=PLQVvvaa0QuDeETZEOy4VdocT7TOjfSA8a&index=4">https://www.youtube.com/watch?v=h98js2usaVo<br>&list=PLQVvvaa0QuDeETZEOy4VdocT7TOjfSA8a&index=4</a><br> [Accessed June 4 2020]<br>
+	Image of Road: <a href="https://www.freeimageslive.co.uk/free_stock_image/onelaneroadjpg">narrow road ahead</a> by <a href="https://www.freeimageslive.co.uk/users/surfside">surfside</a></p>
+	<div class="Images">
+		<figure class="DrivingImageClass">
+			<img src="Images/Lane Detector/LaneDetectionCode1.png" alt="LaneDetectionCode1"></img>
+			<figcaption><i>Fig 1: Section of code from Python file</i></figcaption>
+		</figure>
+		<figure class="DrivingImageClass">
+			<img src="Images/Lane Detector/ResultRoad.png" alt="Road"></img>
+			<figcaption><i>Fig 2: Result of running the code on the test image "Road.jpg"</i></figcaption>
+		</figure>
+	</div>
+</div>
+<button type="button" class="AccordDropdown" onclick='ChangeImage("GameJamImageClass")'>Nottingham Trent University Devsoc Quarantine Game Jam Submission</button>
+<div class="Text">
+<ul>
+	<li><b>Summary:</b> A game my group made based on the theme of Local Folklore as a Game Jam submission</li>
+	<li><b>Programming Language:</b> Python</li>
+	<li><b>Additional Modules:</b> Pygame</li>
+</ul>
+	<p>During early September 2020, I saw on the Nottingham Trent University Developer Society (Devsoc) Discord server that they were working in collaboration with the 
+	Nottingham Trent University Global Lounge on a game jam for students to get involved in. I decided to sign up for it because I wanted to both experience an official game jam
+	and I wanted to network with other people who may not be from a programming background but are still interested in the development of this particular area of software.<br><br>
+	I was placed into a group with two other people, in which we decided on the subject of Robin Hood, being the most famous example of folklore local to Nottinghamshire. After this,
+	we then decided on group roles, in which was assigned the Group Leader and the Lead Programmer, as I have had experience with leading groups when it came to software development as well
+	as experience with programming, alas not with game development but with the programming language Python. After taking on these roles, I looked at what needed to be done
+	for this project to be completed and I assigned the second member of the group to be the Lead Art Designer, creating the sprites and deciding on the music to be used during the game, and
+	the third member of the group was the Lead Writer, as I was informed that they had experience with writing. The sprites used in the game were custom-made by the Lead Art Designer, but both 
+	the music and the background were sourced from elsewhere, the links to both of these can be found in the References section below.<br><br>
+	The three of us stayed in contact with each other over the next five days using Discord and Microsoft Teams, so any decisions that were made or milestones achieved could be discussed with the
+	team. One such example of where the use of software was used for communication was on the subject of delegation of work near the beginning of the project, in which I decided against deciding on
+	the type of music to be used, and delegated this to the Art Designer so I could continue working on the programming of the system. Furthermore, I wanted any decisions which would impact the group 
+	greatly to be agreed upon by all members of the group, so before I submitted the work, I organised a call with the other two members of the group so I could show them the final game and ask for feedback
+	on whether they wanted anything to be changed within the game. I found this approach to be very successful, as it assured me that every member of the group was happy with our combined efforts
+	before its submission. After all the work was done, we discussed the name of the group and decided on the name "The Retro Reference".<br><br> 
+	Personally, the programming aspect of the game had both easy aspects and difficult aspects, as I have never created a game using Pygame before, so I did read through the documentation multiple times to help
+	achieve a particular goal. An example was the subject of displaying rectangles on the screen in order to create buttons, which I did not know how to do before reading the "pygame.draw" section of the
+	documentation. The full documentation can be found <a href="https://www.pygame.org/docs/">here</a>. However, an aspect I found easy was the inclusion of Object-Oriented Programming when creating a class for the
+	arrow projectile, as I have had experience with programming in the OOP paradigm in multiple programming languages, especially Python. With this experience of game development using Pygame, I now feel more confident
+	in using the Pygame module.
+	The game, along with the assets and the code, can be found on my <a href="https://github.com/Lwa-15">GitHub account</a> as well as on <a href="https://lwa-15.itch.io/robin-hood-and-the-sheriffs-challenge">Itch.io</a>.<br><br>
+	References:<br><br>
+	Background - <a href="https://edermunizz.itch.io/free-pixel-art-forest">Free Pixel Art Forest</a> by edermunizz<br>
+	Music - <a href="https://freemusicarchive.org/music/TRG_Banks">Fergus O'Reilly</a> by TRG_Banks<br>
+	<div class="Images">
+		<figure class="GameJamImageClass">
+			<img src="Images/Game Jam/GameRunning.png" alt="GameRunning"></img>
+			<figcaption><i>Fig 1: Screenshot of the game working</i></figcaption>
+		</figure>
+		<figure class="GameJamImageClass">
+			<img src="Images/Game Jam/GameCode.png" alt="GameCode"></img>
+			<figcaption><i>Fig 2: Sample of the code written</i></figcaption>
+		</figure>
+		<figure class="GameJamImageClass">
+			<img src="Images/Game Jam/GameEarlyPhysics.png" alt="EarlyPhysics"></img>
+			<figcaption><i>Fig 3: Me working on an early idea of the physics engine</i></figcaption>
+		</figure>
+	</div>
+</div>
+<h1>Academic Projects:</h1> <!--The Academic Projects I have created-->
+<button type="button" class="AccordDropdown" onclick='ChangeImage("ClothingImageClass")'>Automated Clothing Assistant</button>
+<div class="Text">
+	<ul>
+		<li><b>Summary:</b> A hybrid recommendation program which takes an average colour of a piece of clothing by camera as well as the type of clothing and the rating of that piece of clothing
+		and recommends related pieces of clothing based on colour and type.</li>
+		<li><b>Programming Language:</b> Python</li>
+		<li><b>Additional Modules:</b> OpenCV, Numpy, Tkinter</li>
+	</ul>
+	<p>
+	Whilst at college, I completed the Extended Project Qualification, in which I created a piece of software which prompted the user to enter a piece of clothing and a rating for their 
+	chosen piece of clothing. Also, the user had the option to use their camera to capture the colours of pixels in a certain area of the screen (where the user would hold up their clothing
+	item), which would calculate the average RGB value as well as the name of the colour of the clothing. From all this data, the program would use Colour Theory as well as content-
+	based algorithms in order to recommend other pieces of clothing to the user. The data would be taken from a Comma Separated Values file (.csv).<br>
+	During the creation of the system, there were a few developments from what I had originally planned to include. One such development was the lack of need to include an ID for each record of
+	data in the .csv files. This was not needed as the recommendations was made based on characteristics, the software extracting specific rows based on this, so no ID was needed. 
+	This development made the code more concise and simpler to understand instead of the iteration needed to identify the ID. Another development was the choice to take an average
+	colour for the area of the screen used to capture the pixels of the clothing item. What had occurred was that the program yielded an error when I used functions such as 
+	"sum()" and "float(len())" on the Numpy array. So I have decided to keep a variable of the total in which to use for the average. I also discovered that the Count variable I 
+	used to iterate can also be used in the calculation for the average.<br><br>
+	However, there were some features in my original plan which I could not add to my system due to limited project time and a lack of knowledge in some areas of programming. One of
+	these are a weather API, which would of been used in recommendation, as if the weather was cold, then the system would advise you wear a jumper or coat, or if it was snowing,
+	the system would advise you wear gloves or a scarf. If I created this program again in my spare time, I would research into using a weather API to help in the recommendation
+	of clothing. Related to recommendations of clothing, another feature I did not include was the use of a calender, which would hold information on what the user would be doing on a 
+	specific day and recommend clothing along with the other data. For example, if the user had a garden party one day, then the system may either just recommend based on the fact that
+	the party is in the garden (using Natural Language Processing) or would use along with the weather API to see what the appropriate clothing would be. At the time, I had no knowledge of how to create a Graphical
+	User Interface, so to teach myself how to use Tkinter, I watched the <a href="https://www.youtube.com/playlist?list=PL6gx4Cwl9DGBwibXFtPtflztSNPGuIB_d">Python GUI with Tkinter Playlist</a> playlist on 
+	YouTube as well as <a href="https://stackoverflow.com/">Stack Overflow</a> to try and find answers to issues I was having with the code.
+	The code can be found in a respository on my <a href="https://github.com/Lwa-15">GitHub account</a>.</p>
+	<div class="Images">
+		<figure class="ClothingImageClass">
+			<img src="Images/Clothing Recommender/RecommenderDataEntry.png"></img>
+			<figcaption><i>Fig 1: Data Entry for the recommender</i></figcaption>
+		</figure>
+		<figure class="ClothingImageClass">
+			<img src="Images/Clothing Recommender/TriadRecommendations.png"></img>
+			<figcaption><i>Fig 2: Recommendations for Triad colours based on the data entry</i></figcaption>
+		</figure>
+		<figure class="ClothingImageClass">
+			<img src="Images/Clothing Recommender/RecommenderCode.png"></img>
+			<figcaption><i>Fig 3: Section of code from the Recommender</i></figcaption>
+		</figure>
+	</div>
+</div>
+<button type="button" class="AccordDropdown" onclick='ChangeImage("BudgetImageClass")'>Budgeting Software</button>
+<div class="Text">
+	<ul>
+		<li><b>Summary:</b> A program which processes a user's financial data and displays back the data as both a graph and a list</li>
+		<li><b>Programming Language:</b> Python</li>
+		<li><b>Additional Modules:</b> Tkinter, Pyodbc, Datetime, Random, Matplotlib</li>
+	</ul>
+	<p>
+	Whilst in the first term of Year 1 at univeristy, one of my projects was to create a Python program which took a user's budget topic, value and deadline as input and save it to 
+	an external database. The user can then enter their expenditure topic and value, with this also being saved to an external database. From this data, calculations can be run 
+	to see if the user is over-spending or under-spending in a certain area. This data can be presented to the user in either a ‘data-sheet’ format or in a diagrammatic format.<br><br>
+	For the project, I used several different Python modules, these were Tkinter, Pyodbc, Datetime, Random and Matplotlib. Tkinter is the module which is used to create the user 
+	interface. The reason why I chose Tkinter over another Python-related interface module such as Pygame was because I have experience with Tkinter, so I felt that it would make 
+	the system creation more efficient if I used this module. Features of Tkinter used in the system will be an Entry widget, Frame widgets, Label widgets and Button widgets.
+	Pyodbc is the module which allows for a Python file to establish a connection with a Microsoft Access database in order to read and write data from the database. The reason why
+	I chose Pyodbc over another database module, such as MySQL, was because I understand how the basics of Microsoft Access database works, and I would like to learn more advanced 
+	applications and features of an Access database, such as how to query data through a Python file.
+	Datetime is the module used to utilise dates and times in Python. The reason why I have decided to use Datetime is because of a feature of datetime which allows for a Pattern 
+	Check to be carried out on a date string, returning True or False depending on if it conforms to the desired pattern.
+	Random is the module used in Python to randomly choose numbers. The reason why I have decided to use Random in my system is because a random number between 0 and 100 is 
+	appended onto the first letters of a user’s forename and surname (JD85 for “John Doe”) for there to be a lesser probability that two users would have the same generated 
+	username. 
+	Matplotlib.pyplot, which I used to plot the data onto a graph, is a section of a larger module called Matplotlib which mainly concerns itself with generating programmatic and 
+	interactive plots in Python. The reason why I have chosen to use this module is because the graphs created by this module are easy-to-understand and visual enough for the user 
+	to interpret the graphs shown to them.<br><br>
+	Overall, I found that the project was quite easy to create and debug, and if I had more time on the project, I would add other instances of validation algorithms throughout. 
+	Some would include: A Range Check, so the user can only enter a Budget Value or Expenditure Value from 0 to £10,000 as an example or a Pattern Check on the values, checking 
+	that they have two decimal places after the decimal point. This would mean that there are even more safeguards against incompatible data. Another improvement I would make is 
+	the addition of a list of just the expenditure and budget data, as well as displaying the data in a graph, so the user can easily read the list as well as look at the graph. 
+	This list could also order their budgets and expenditures so the user can see what their largest expenditure or budget is. At the time, I had some knowledge of how to create a 
+	Graphical User Interface from other projects which needed a GUI, but to reinforce what I already knew, I watched the <a href="https://www.youtube.com/playlist?list=PL6gx4Cwl9DGBwibXFtPtflztSNPGuIB_d">Python GUI with Tkinter Playlist</a> 
+	playlist on YouTube as well as <a href="https://stackoverflow.com/">Stack Overflow</a> to try and find answers to issues I was having with the code.
+	The code can be found in a respository on my <a href="https://github.com/Lwa-15">GitHub account</a>.</p>
+	<div class="Images">
+		<figure class="BudgetImageClass">
+			<img src="Images/Budgeting/BudgetingLogin.png"></img>
+			<figcaption><i>Fig 1: Login Screen</i></figcaption>
+		</figure>
+		<figure class="BudgetImageClass">
+			<img src="Images/Budgeting/BudgetingAddBudget.png"></img>
+			<figcaption><i>Fig 2: Add Budget Screen</i></figcaption>
+		</figure>
+		<figure class="BudgetImageClass">
+			<img src="Images/Budgeting/BudgetingViewBudget1.png"></img>
+			<figcaption><i>Fig 3: View Budget Screen and Message</i></figcaption>
+		</figure>
+		<figure class="BudgetImageClass">
+			<img src="Images/Budgeting/BudgetingViewBudget2.png"></img>
+			<figcaption><i>Fig 4: View Budget Screen and Graph</i></figcaption>
+		</figure>
+		<figure class="BudgetImageClass">
+			<img src="Images/Budgeting/BudgetingAddExpenditure.png"></img>
+			<figcaption><i>Fig 5: Add Expenditure Screen</i></figcaption>
+		</figure>
+		<figure class="BudgetImageClass">
+			<img src="Images/Budgeting/BudgetingViewExpenditure.png"></img>
+			<figcaption><i>Fig 6: View Expenditure Screen and Pie Chart</i></figcaption>
+		</figure>
+	</div>
+</div>
+
+<button type="button" class="AccordDropdown" onclick='ChangeImage("TrackerImageClass")'>Food and Health Tracker</button>
+<div class="Text">
+	<ul>
+		<li><b>Summary:</b> A program which tracks the user's entered food and BMI data and advises depending on the data present</li>
+		<li><b>Programming Language:</b> C++</li>
+		<li><b>Additional Modules:</b> C++/CLR </li>
+	</ul>
+	<p>
+	Whilst in the second term of Year 1 at univeristy, one of my projects was to create a C++ program which allows the user to enter a food item that they have eaten or drunk 
+	today along with the amount in each nutrition group found in the food item. The user can then view their food data in a standard food diary, showing the date they ate or 
+	drunk the food item, the name of the item and the nutrient values of the food items. Also, the user can view their food item data with the nutrient values sorted from highest 
+	to lowest, with the system displaying advice to the user, warning them what too much of a certain nutrition group would do to the human body. Furthermore, the user can navigate 
+	to a health page, in which their previously-entered BMI information would be displayed in a line graph and the option for the user to calculate today’s BMI value and would then 
+	append this value onto the line graph.<br><br>
+	For this project, I decided to use a C++/CLR type of file, which incorportates interoperability between .NET and C++ code and allows for a Graphical User Interface to be 
+	created and programmed using the C++ programming language. Furthermore, in the Nutrients Sort form, I decided to use a Bubble Sort Algorithm to sort the data read form a Comma-Separated
+	Value (.csv) file, as this had a time complexity of O(n²) which is quicker than other sorting algorithms.<br><br>
+	This project was more difficult than past projects, as I had not programmed in C++ before starting this module in the second term, so I was learning C++ in both my lab sessions 
+	and my spare time before I started the project later on in the term. In addition to this, the CLR addition to the C++ applicaiton was not covered in the lectures and lab 
+	sessions at university, so I had to watch videos on YouTube to learn how to program the interface aspect of the program. The video series I watched to learn the CLR language 
+	by the channel <a href="https://www.youtube.com/user/ProgrammingKnowledge">ProgrammingKnowledge</a> can be found 
+	<a href="https://www.youtube.com/playlist?list=PLS1QulWo1RIZz6uDid--I09EOImRmPHS0">here</a>. Furthermore, I used <a href="https://stackoverflow.com/">Stack Overflow</a> to seek 
+	any answers to issues I ran into during the development of this project, an example of where I needed to user Stack Overflow was when I was looking for how to convert standard 
+	string data type to a system string data type, which can be found <a href="https://stackoverflow.com/questions/1300718/c-net-convert-systemstring-to-stdstring">here</a>.
+	The code can be found in a respository on my <a href="https://github.com/Lwa-15">GitHub account</a>.</p>
+	<div class="Images">
+		<figure class="TrackerImageClass">
+			<img src="Images/Food Health/FoodHealthCode.png"></img>
+			<figcaption><i>Fig 1: Section of code from the Food Diary form</i></figcaption>
+		</figure>
+		<figure class="TrackerImageClass">
+			<img src="Images/Food Health/FoodHealthSequenceDiagram.png"></img>
+			<figcaption><i>Fig 2: Sequence Diagram for reading data from a Comma Separated Values file</i></figcaption>
+		</figure>
+		<figure class="TrackerImageClass">
+			<img src="Images/Food Health/FoodHealthSortMessage.png"></img>
+			<figcaption><i>Fig 3: Message displaying the user's entered nutrient data on the Nutrient Sort form</i></figcaption>
+		</figure>
+		<figure class="TrackerImageClass">
+			<img src="Images/Food Health/FoodHealthSortForm.png"></img>
+			<figcaption><i>Fig 4: The Nutrient Sort form, with the nutrients sorted using a Bubble Sort Algorithm</i></figcaption>
+		</figure>
+	</div>
+</div>
+</div>
+<script src="Javascript.js"></script> <!--Placed inside Body instead of Head because it would slow down the loading of the page for the users by loading in Javascript code before HTML code-->
+<div class="Footer"> <!--Container holding the footer code-->
+	<p>Created by Luke Aldred<br>
+	Sitemap Navigation Link: <a href="Sitemap.html">Sitemap</a><br> <!--Link to the website's sitemap-->
+	Email Me With Link: <a href="mailto:lwa15@hotmail.co.uk?subject=Contact from Portfolio Website">lwa15@hotmail.co.uk</a></p> <!--Mailto link for viewers to email me with-->
+</div>
+</body>
+</html>

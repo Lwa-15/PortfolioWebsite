@@ -1,0 +1,413 @@
+/*CSS across all pages*/
+body { /*Sets the body's background colour and scale*/
+	margin: 0px;
+	height: auto;
+	min-height: 100%;
+	background-color: #F0FFFF;
+	margin-bottom: 125px;
+}
+.MenuIcon { /*Sets the Menu Icon's background and width*/
+	background-color: black;
+	width: 50px;
+	padding: 3px 6px;
+}
+
+.MenuIcon div { /*Sets the Menu Icon's rectangles to white along their margins and display*/
+	width: 40px;
+	height: 5px;
+	margin: 0 6px;
+	margin-top: 10px;
+	background-color: white;
+	display: none;
+}
+
+.MenuIcon ul { /*Sets the Menu Icon's navigation links to not have any styling, sets its background colour and display*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: black;
+	position: absolute;
+	display: none;
+}
+
+.MenuIcon li a { /*Sets the Menu Icon's links to have no decoration on the text itself*/
+	text-decoration: none;
+}
+
+.MenuIcon:hover { /*Upon hover, the Menu Icon should set its internal padding to expand to show the navigation bar over a duration of 0.55s*/
+	padding-bottom: 250px;
+	transition: 0.55s;
+}
+
+.MenuIcon:hover ul { /*Upon hover, shows the navigation bar links*/
+	display: block;
+	transition: 2s;
+}
+
+.MenuIcon div:last-child { /*Sets the last div container in the Menu Icon container to have a margin on the bottom of 10px*/
+	margin-bottom: 10px;
+}
+
+.NavigationBar { /*Hides the Navigation Bar's overflow elements and sets the background to black*/
+	overflow: hidden;
+	background-color: black;
+}
+.NavigationBar a, .NavigationBar h2{ /*Sets the Navigation Bar's text colour, background colour and font*/
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 17px;
+	display: block;
+	font-family: 'Oswald', sans-serif;
+}
+
+.NavigationBar h2 { /*Sets the Navigation Bar's padding and margin*/
+	padding: 2px;
+	margin-left: 5px;
+}
+.NavigationBar a:hover { /*Upon hover, the Navigation Bar's links will have a pink background*/
+	background-color: #DD22AA;
+}
+
+@media screen and (max-width: 500px) { /*When the screen gets to 500px (mobile view) the navigation bar would not be displayed any more and show the Menu Icon's container elements*/
+	.NavigationBar a, .NavigationBar h2 {
+		display: none;
+	}
+	.MenuIcon, .MenuIcon div {
+		display: block;
+	}
+	
+	.MenuIcon li a{
+		display: block;
+	}
+}
+
+.Footer { /*Sets the Footer's width, background colour and positioning on the screen*/
+	width: 100%;
+	background-color: #9AA3A3;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	height: 115px;
+}
+
+.Footer p { /*Sets the footer text's font and margins*/
+	margin: auto;
+	font-size: 20px;
+	font-family: 'Oswald', serif;
+	margin-top: 10px;
+}
+
+/*CSS for Home Page*/
+.HomeInformation { /*Sets the container's width and positioning*/
+	width: 100%;
+	margin: 20px;
+	height: 100%;
+	position: fixed;
+}
+
+.HomeHeadings { /*Sets the heading's margins, font and background colour*/
+	text-align: center;
+	left: 50%;
+	margin-top: 10%;
+	margin-left: 25%;
+	margin-right:25%;
+	font-family: 'Cardo', serif;
+	background-color: #F0FFFF;
+	z-index: 2;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.HomeHeadings a { /*Sets the heading link's font, colour and decoration*/
+	text-decoration: none;
+	background-color: #0D1913;
+	color: white;
+	display: inline-block;
+	padding: 10px;
+	font-family: 'Cardo', serif;
+}
+
+.HomeHeadings a:hover { /*Upon hover, the links would react by growing in size over a period of 0.7s*/
+	padding: 20px;
+	font-size: 18px;
+	transition: 0.7s;
+}
+
+h1 { /*Sets the heading's font and padding*/
+	font-family: 'Oswald', sans-serif;
+	padding: 0 20px;
+}
+
+.HomeImage{ /*Sets the background image's positioning to be responsive and its brightness*/
+	position: absolute;
+	opacity: 1.25;
+	height: 640px;
+	width: 100%;
+	min-width: 100%;
+	object-fit: cover;
+	filter: brightness(50%);
+}
+
+/*CSS for About Page*/
+.AboutMe { /*Sets the container's positioning and spacing*/
+	float: left;
+	width: 90%;
+	margin-bottom: 150px;
+	padding: 0 10px;
+}
+
+.AboutMeImage img{ /*Sets the image's size and spacing*/
+	border-radius: 400px; 
+	width: 450px;
+	float: right;
+	margin-right: 40px;
+	margin-top: 10px;
+}
+
+.AboutParagraph { /*Sets the paragraph container's shadow, font, spacing and background colour*/
+	font-family: 'Cardo', serif;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	background-color: #C9C9BB;
+	margin: 10px;
+	width: 50%;
+}
+
+.AboutParagraph p { /*Sets the paragraph text's padding*/
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.ProgressBar { /*Sets the progress bar background's size, background colour and spacing*/
+	margin-left: 30px;
+	width: 50%;
+	background-color: #64645D;
+	border-radius: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.Bar { /*Sets the progress bars' colour and height*/
+	border-radius: 20px;
+	height:30px;
+	color: white;
+}
+
+@media screen and (max-width: 1180px) { /*When the screen gets to 1180px, the position of the image and the width of the paragraph changes to make the information easier to read*/
+	.AboutParagraph {
+		width: 99%;
+		box-shadow: -10px -10px 5px #aaaaaa;
+		margin-top: 650px;
+		margin-right: 20px;
+	}
+	
+	.AboutMeImage img {
+		padding-top: 10px;
+		float: left;
+	}
+	
+	.AboutMeImage {
+		padding-left: 200px;
+	}
+}
+
+@media screen and (max-width: 900px) { /*When the screen gets to 900px, the position of the image and progress bars change*/
+	.AboutMeImage {
+		padding-left: 10px;
+	}
+	
+	.ProgressBar {
+		margin-left: 100px;
+	}
+}
+
+/*CSS for Portfolio Page*/
+.Portfolio { /*Sets the margin of the portfolio container*/
+	margin-top: 10px;
+}
+
+.AccordDropdown{ /*Sets the accordion sections' positioning, size, colour and font*/
+	max-width: 1000px;
+	margin: auto;
+	background-color: #0D1913;
+	padding: 10px;
+	position: relative;
+	border-bottom: 1px solid;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	transition: 0.4s;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	border-bottom: 1px solid black;
+	color: white;
+	display: block;
+}
+
+.active, .AccordDropdown:hover { /*Upon hover, the accordion sections will react by changing colour*/
+	background-color: #DD22AA;
+}
+
+.Text{ /*Sets the active project's text container's display, width and colour*/
+	display: none;
+	overflow: hidden;
+	background-color: #C9C9BB;
+	max-width: 1000px;
+	margin:auto;
+}
+
+.Text p { /*Sets the text's positioning and font*/
+	float: right;
+	padding: 0 20px;
+	display: inline;
+	width: 45%;
+	font-family: 'Cardo', serif;
+}
+
+.Text ul, li { /*Sets the list and list elements' positioning, styling and font*/
+	float: right;
+	padding: 0 20px;
+	width: 66%;
+	font-family: 'Cardo', serif;
+	list-style-type: none;
+}
+
+.Images { /*Sets the images' position and margin*/
+	position: relative;
+	margin-left: 20px;
+}
+
+.Images img { /*Sets the images' positioning, border and height*/
+	width: 475px;
+	float: left;
+	border: 5px solid #0D1913;
+	height: 400px;
+}
+
+figure { /*Sets the figures' positioning and margin*/
+	float: left;
+	width: 485px;
+	margin-left: 0px;
+	position: absolute;
+}
+
+.Images figcaption { /*Sets the figure captions' font, background colour and border*/
+	background-color: white;
+	font-family: 'Cardo', serif;
+	border: 5px solid #0D1913;
+}
+
+@media screen and (max-width: 1000px) { /*When the screen gets to 1000px, the text containers inside the accordion dropdowns will change*/
+	.Text p {
+		width: 90%;
+		float: center;
+		padding: 0 20px;
+	}
+	
+	.Text ul, li {
+		width: 94%;
+		padding: 0 20px;
+	}
+	
+	.Text ul {
+		padding-top: 500px;
+	}
+	
+	.Images img {
+		width: 600px;
+	}
+	
+	figure {
+		width: 610px;
+	}
+}
+
+@media screen and (max-width: 658px) {
+	.Images img {
+		width: 500px;
+	}
+	
+	figure {
+		width: 510px;
+	}
+
+	.Images {
+		margin-left: 10px;
+	}
+	/*figure {
+		width: 500px;
+	}*/
+}
+
+/*CSS for Contact Page*/
+.ContactInformation { /*Sets the container's background colour, spacing, positioning, font and shadow*/
+	margin: auto;
+	width:50%;
+	padding:10px;
+	background-color: #C9C9BB;
+	border-style: solid;
+	border-radius: 25px;
+	padding-bottom: 20px;
+	text-align: center;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	font-family: 'Cardo', serif;
+	margin-top: 10px;
+}
+
+.ContactInfo p { /*Sets the contact information text's font*/
+	font-family: 'Cardo', serif;
+}
+
+.DropdownButton { /*Sets the dropdown button's border, positioning, colour and text decoration*/
+	position: relative;
+	display: inline-block;
+	background-color: #00008B;
+	border: none;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+.DropdownButton button { /*Sets the dropdown button's text decoration, colour and positioning*/
+	text-decoration: none;
+	background-color: #0D1913;
+	color: white;
+	display: inline-block;
+	padding: 10px;
+}
+
+.DropdownContent { /*Sets the dropdown content's positioning, colour, spacing and border*/
+	display: none;
+	position: absolute;
+	z-index: 1;
+	min-width: 150px;
+	background-color: #443344;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	border-bottom: black 2px;
+}
+
+.DropdownContent a { /*Sets the dropdown content links' colour and text decoration*/
+	color: white;
+	text-decoration: none;
+}
+
+.DropdownButton:hover .DropdownContent { /*Upon hover, the dropdown button will display all of the dropdown content*/
+	display: block;
+}
+
+/*CSS for Sitemap*/
+
+.Sitemap { /*Sets the sitemap page's position, list styling and font*/
+	float: left;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	list-style-type: none;
+}
